@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.winter-tint {
+  background: linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%);
+}
+
+.summer-tint {
+  background: linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%);
+}
+
+.spring-tint {
+  background: linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%);
+}
+
+.autumn-tint {
+  background: linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%);
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.autumn-picture {
+  background-image: url('https://images.unsplash.com/photo-1507371341162-763b5e419408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGF1dHVtbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.spring-picture {
+  background-image: url('https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.summer-picture {
+  background-image: url('https://media.istockphoto.com/photos/red-sunset-picture-id510322864?b=1&k=20&m=510322864&s=170667a&w=0&h=kWGPRg6TaQ753EqedUwdXX8tSrl7Lr49ctu9HPIzM10=');
+}
+
+.winter-picture {
+  background-image: url('https://images.unsplash.com/photo-1453306458620-5bbef13a5bca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHdpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
